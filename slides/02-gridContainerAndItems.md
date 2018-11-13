@@ -15,7 +15,7 @@
 
 ###### Grid Container
 <hr />
-* Cannot apply styles to the grid container itself, only the children can be styled
+* Cannot apply styles directly to the grid cells or gaps, only the items (children) can be styled
 
 ----
 

@@ -33,9 +33,11 @@
 
 ----
 
-###### Next Up
+###### We'll Discuss:
 <hr />
-* Grid Container vs. Grid Items
+* Grid containers vs. grid items
 * Grid container (parent) properties
+  * Sample grid for container properties
 * Grid items (children) properties
-* Examples
+  * Sample grid for item properties
+* Summary
