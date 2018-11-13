@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-markdown="./slides/01-overview.md" 
+								 data-separator-vertical="^\r?\n----\r?\n$"
+								 data-transition="convex">
+				</section>
+				<section data-markdown="./slides/02-gridContainerAndItems.md" 
+								 data-separator-vertical="^\r?\n----\r?\n$"
+								 data-transition="convex">
+				</section>
+				<section>
+					<h6>Sample Grid</h6>
+					<button id="cell-button">Cell</button>
+					<button id="track-button">Track</button>
+					<div class="grid-container">
+						<div class="grid-item item-1"></div>
+						<div class="grid-item item-2"></div>
+						<div class="grid-item item-3"></div>
+						<div class="grid-item item-4"></div>
+						<div class="grid-item item-5"></div>
+						<div class="grid-item item-6"></div>
+						<div class="grid-item item-7"></div>
+						<div class="grid-item item-8"></div>
+						<div class="grid-item item-9"></div>
+					</div>
+				</section>
+				<section data-markdown="./slides/03-containerProperties.md" 
+								 data-separator-vertical="^\r?\n----\r?\n$"
+								 data-transition="convex">
+				</section>
+				<section data-markdown="./slides/04-itemProperties.md" 
+								 data-separator-vertical="^\r?\n----\r?\n$"
+								 data-transition="convex">
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script src="js/grid.js"></script>
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
